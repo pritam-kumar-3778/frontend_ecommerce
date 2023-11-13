@@ -1,138 +1,74 @@
-import { Button, Grid, Typography,Link } from "@mui/material";
-import React from "react";
+import { Grid, Link, Typography } from '@mui/material';
 
 const Footer = () => {
   return (
-    <div>
-      <Grid
-        className="bg-black text-white text-center mt-10"
-        container
-        sx={{ bgcolor: "black", color: "white", py: 3 }}
-      >
-        <Grid item xs={12} sm={6} md={3}>
-          <Typography className="pb-5" varient="h6">
-            {" "}
-            Company{" "}
-          </Typography>
-          <div>
-            <Button className="pb-5" varient="h6" gutterBottom>
-              {" "}
-              About{" "}
-            </Button>
-          </div>
-          <div>
-            <Button className="pb-5" varient="h6" gutterBottom>
-              {" "}
-              Blog{" "}
-            </Button>
-          </div>
-
-          <div>
-            <Button className="pb-5" varient="h6" gutterBottom>
-              {" "}
-              press{" "}
-            </Button>
-          </div>
-
-          <div>
-            <Button className="pb-5" varient="h6" gutterBottom>
-              {" "}
-              Jobs{" "}
-            </Button>
-          </div>
-
-          <div>
-            <Button className="pb-5" varient="h6" gutterBottom>
-              {" "}
-              Partners{" "}
-            </Button>
-          </div>
-        </Grid>
-        <Grid item xs={12} sm={6} md={3}>
-          <Typography className="pb-5" varient="h6">
-            {" "}
-            Solutions{" "}
-          </Typography>
-          <div>
-            <Button className="pb-5" varient="h6" gutterBottom>
-              {" "}
-              Marketing{" "}
-            </Button>
-          </div>
-          <div>
-            <Button className="pb-5" varient="h6" gutterBottom>
-              {" "}
-              Analysis{" "}
-            </Button>
-          </div>
-
-          <div>
-            <Button className="pb-5" varient="h6" gutterBottom>
-              {" "}
-              Commerce{" "}
-            </Button>
-          </div>
-
-          <div>
-            <Button className="pb-5" varient="h6" gutterBottom>
-              {" "}
-              Insights{" "}
-            </Button>
-          </div>
-
-          <div>
-            <Button className="pb-5" varient="h6" gutterBottom>
-              {" "}
-              Support{" "}
-            </Button>
-          </div>
-        </Grid>
-        
-
-        <Grid item xs={12} sm={6} md={3}>
-          <Typography className="pb-5" varient="h6">
-            {" "}
-            Documetation{" "}
-          </Typography>
-          <div>
-            <Button className="pb-5" varient="h6">
-              {" "}
-              Guides{" "}
-            </Button>
-          </div>
-          <div>
-            <Button className="pb-5" varient="h6">
-              {" "}
-              API Stutes{" "}
-            </Button>
-          </div>
-        </Grid>
-        <Grid item xs={12} sm={6} md={3}>
-          <Typography className="pb-5" varient="h6">
-            {" "}
-            Legal{" "}
-          </Typography>
-          <div>
-            <Button className="pb-5" varient="h6">
-              {" "}
-              Claim{" "}
-            </Button>
-          </div>
-          <div>
-            <Button className="pb-5" varient="h6">
-              {" "}
-              Privacy{" "}
-            </Button>
-          </div>
-
-          <div>
-            <Button className="pb-5" varient="h6">
-              {" "}
-              terms{" "}
-            </Button>
-          </div>
-        </Grid>
-        <Grid className='pt-20' item xs={12} >
+    <Grid className='bg-black text-white mt-10 text-center' container color={'white' } sx={{ bgcolor: 'black', color: 'white', py: 3 }}>
+      <Grid  item xs={12} sm={6} md={3}>
+        <Typography className='pb-5' variant="h6" gutterBottom>
+          Company
+        </Typography>
+        <Typography variant="body2" component="p" gutterBottom>
+          About
+        </Typography>
+        <Typography variant="body2" component="p" gutterBottom>
+          Blog
+        </Typography>
+        <Typography variant="body2" component="p" gutterBottom>
+          Jobs
+        </Typography>
+        <Typography variant="body2" component="p" gutterBottom>
+          Press
+        </Typography>
+        <Typography variant="body2" component="p" gutterBottom>
+          Partners
+        </Typography>
+      </Grid>
+      <Grid item xs={12} sm={6} md={3}>
+        <Typography className='pb-5' variant="h6" gutterBottom>
+          Solutions
+        </Typography>
+        <Typography variant="body2" component="p" gutterBottom>
+          Marketing
+        </Typography>
+        <Typography variant="body2" component="p" gutterBottom>
+          Analytics
+        </Typography>
+        <Typography variant="body2" component="p" gutterBottom>
+          Commerce
+        </Typography>
+        <Typography variant="body2" component="p" gutterBottom>
+          Insights
+        </Typography>
+        <Typography variant="body2" component="p" gutterBottom>
+          Support
+        </Typography>
+      </Grid>
+      <Grid item xs={12} sm={6} md={3}>
+        <Typography className='pb-5' variant="h6" gutterBottom>
+          Documentation
+        </Typography>
+        <Typography variant="body2" component="p" gutterBottom>
+          Guides
+        </Typography>
+        <Typography variant="body2" component="p" gutterBottom>
+          API Status
+        </Typography>
+      </Grid>
+      <Grid item xs={12} sm={6} md={3}>
+        <Typography className='pb-5' variant="h6" gutterBottom>
+          Legal
+        </Typography>
+        <Typography variant="body2" component="p" gutterBottom>
+          Claim
+        </Typography>
+        <Typography variant="body2" component="p" gutterBottom>
+          Privacy
+        </Typography>
+        <Typography variant="body2" component="p" gutterBottom>
+          Terms
+        </Typography>
+      </Grid>
+      <Grid className='pt-20' item xs={12} >
         <Typography variant="body2" component="p" align="center">
           &copy; 2023 My Company. All rights reserved.
         </Typography>
@@ -150,9 +86,7 @@ const Footer = () => {
           </Link>
         </Typography>
       </Grid>
-      </Grid>
-      
-    </div>
+    </Grid>
   );
 };
 
