@@ -7,14 +7,7 @@ import {
   MinusIcon,
   PlusIcon,
   Squares2X2Icon,
-} from "@heroicons/react/20/solid";
-import Radio from "@mui/material/Radio";
-import RadioGroup from "@mui/material/RadioGroup";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import FormControl from "@mui/material/FormControl";
-import FormLabel from "@mui/material/FormLabel";
-import Pagination from "@mui/material/Pagination";
-
+} 
 import { filters, singleFilter, sortOptions } from "./FilterData";
 import ProductCard from "../ProductCard/ProductCard";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
@@ -28,9 +21,7 @@ import {
 import { deepPurple } from "@mui/material/colors";
 import { Backdrop, CircularProgress } from "@mui/material";
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
+
 
 export default function Product() {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
@@ -64,6 +55,11 @@ export default function Product() {
     searchParams.set("sort", value);
     const query = searchParams.toString();
     navigate({ search: `?${query}` });
+
+    
+    function classNames(...classes) {
+      return classes.filter(Boolean).join(" ");
+    }
   };
   const handlePaginationChange = (event, value) => {
     const searchParams = new URLSearchParams(location.search);
